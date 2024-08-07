@@ -1,0 +1,33 @@
+### Get All
+GET http://localhost:3049/api/posts
+Accept: application/json
+
+### Get By Id
+GET http://localhost:3049/api/posts/1
+Accept: application/json
+
+### Create
+POST http://localhost:3049/api/posts
+Content-Type: application/json
+
+{
+  "title": "Post 1",
+  "content": "Content 1"
+}
+
+### Update By Id
+PATCH http://localhost:3049/api/posts/1
+Content-Type: application/json
+
+{
+  "title": "Post 1 Updated",
+  "content": "Content 1 Updated"
+}
+
+### Delete By Id
+DELETE http://localhost:3049/api/posts
+Accept: application/json
+
+{
+  "id": 1
+}
